@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Family Book
+        </title>
+        <body>
+            <center>
+            <h5>Family Book</h5>
+            <img src="father.png" id="picture" height="400" >
+            <p id="name">Dalbir Singh</p>
+            <button onclick="next()" id="next">Next</button>
+        </center>
+        </body>
+        <script>
+            var family_names=["Lamnuam Kim","D.Kevin","Andrew Sahota"];
+            
+            var first=family_names[0];
+
+            var family_pics=["mother.png","kev.jpg","me.png"];
+
+            var i=0;
+            function next(){
+                document.getElementById("name").innerHTML=family_names[i];
+                document.getElementById("picture").src=family_pics[i];
+                i++;
+            } 
+        </script>
+    </head>
+</html>
